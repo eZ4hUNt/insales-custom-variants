@@ -1,0 +1,39 @@
+/* Кастомизированые селекты вариантов */
+	.option-selector {
+		margin: 0!important;
+		.size_options {
+			.title_options {
+				font-size: 11px;
+				padding: 0 0 10px 0;
+				&:before {
+					content: '*';
+					color: red;
+				}
+			}
+			input[type=radio], input[type=radio] {
+				display: none;
+			}
+			input[type=radio]:checked + .radio_label {
+				background-color: #00a99d;
+				border: solid 2px #c5c6cb;
+				color: #fff;
+			}
+			.radio_label {
+				height: 40px;
+				width: 50px;
+				padding: 10px 10px;
+				text-align: center;
+				cursor:pointer;
+				background-color: #ffffff;
+				border: solid 2px #c5c6cb;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				color: #514f51;
+				float: left;
+				margin-bottom: 10px;
+				margin-right: 5px;
+				text-transform: uppercase;
+			}
+		}
+	}
+	
