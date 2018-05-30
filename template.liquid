@@ -16,6 +16,7 @@
       data-option-id="<%= value.position %>"
       data-value-id="<%= value.id %>"
       value="<%= value.position %>"
+      <% if (value.available == false) { %> disabled<% } %>
       <% if (value.disabled) { %>disabled<% } %>
 	  <% if ((option.selected == value.position & initOption)) { %>checked<% } %>
       >
