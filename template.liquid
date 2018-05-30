@@ -18,7 +18,8 @@
       value="<%= value.position %>"
       <% if (value.available == false) { %> disabled<% } %>
       <% if (value.disabled) { %>disabled<% } %>
-	  <% if ((option.selected == value.position & initOption)) { %>checked<% } %>
+      <% if ((value.available != false) && (option.selected == value.position & initOption)) { %>checked<% } %>
+
       >
   <label class="radio_label<% if (value.available == false) { %> disabled<% } %>" for="size-<%= value.id %>"><%= value.title %></label>
   <% }) %>
